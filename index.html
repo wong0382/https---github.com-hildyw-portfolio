@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Data Visualization & Web Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-circle"><img src="images/logo.png" alt="logo"></div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#data-viz" class="nav-link" data-page="data-viz">Data Visualization</a></li>
+                <li><a href="#web-dev" class="nav-link" data-page="web-dev">Web Development</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-bg">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+                <div class="blob blob-3"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="badge">
+                            <span>2025 Dec Graduate • Seeking Entry-Level Opportunities</span>
+                        </div>
+                        
+                        <h1>Interactive Media Design Student</h1>
+                        <h1>Front-End Developer | Data Visualization & Motion Graphics</h1>
+                        <h1 class="gradient-text">Crafting Data-Driven Visual Experiences</h1>
+                        <p class="hero-description">
+                            Passionate about transforming complex concepts into clear, engaging visuals. 
+                            Experienced in interactive media, web development, and motion graphics through academic projects and personal explorations.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <a href="#data-viz" class="btn btn-primary" data-page="data-viz">
+                                View My Datavisualisation Projects
+                                <span class="arrow">→</span>
+                            </a>
+                            <a href="#data-viz" class="btn btn-primary" data-page="data-viz">
+                                View My Web Projects
+                                <span class="arrow">→</span>
+                            </a>
+                            <a href="#about" class="btn btn-outline" data-page="about">About Me</a>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/hildy-w/" class="social-link social-linkedin">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/wong0382/" class="social-link social-github">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="mailto:hildy.hy@gmail.com" class="social-link social-email">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual">
+                        <div class="stat-card">
+                            <div class="stat-bars">
+                                <div class="stat-bar bar-1"></div>
+                                <div class="stat-bar bar-2"></div>
+                                <div class="stat-bar bar-3"></div>
+                            </div>
+                            <div class="stat-numbers">
+                                <div class="stat-item">
+                                    <div class="stat-value" id="projectCount">0</div>
+                                    <div class="stat-label">Projects</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value" id="courseCount">0</div>
+                                    <div class="stat-label">Courses</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value" id="gpaCount">3.8</div>
+                                    <div class="stat-label">GPA</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-icon icon-code">💻</div>
+                        <div class="floating-icon icon-chart">📊</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Work -->
+        <div class="featured-work">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Academic & Overseas Projects</h2>
+                    <p>Explore my journey in interactive media, data visualization, and web development</p>
+                </div>
+                
+                <div class="project-cards">
+                    <div class="project-card card-dataviz">
+                        <div class="card-visual visual-dataviz">
+                            <img src="images/ESG-datavisualisation-work.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-tag">Design Projects</div>
+                            <h3>Data Visualization/Infographics</h3>
+                            <p>Projects focused on translating complex data/information into interactive and userfriendly visuals, including dashboards, infographics, and research visualizations.</p>
+                            <a href="#data-viz" class="card-link" data-page="data-viz">
+                                <span>Explore projects</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card card-webdev">
+                        <div class="card-visual visual-webdev">
+                            <div class="code-lines">
+                                <div class="code-line" style="--width: 80%; --delay: 0s"></div>
+                                <div class="code-line" style="--width: 60%; --delay: 0.3s"></div>
+                                <div class="code-line" style="--width: 90%; --delay: 0.6s"></div>
+                                <div class="code-line" style="--width: 70%; --delay: 0.9s"></div>
+                                <div class="code-line" style="--width: 85%; --delay: 1.2s"></div>
+                            </div>
+                            <div class="card-icon">💻</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-tag">Development Projects</div>
+                            <h3>Web Development</h3>
+                            <p>Hands-on projects building responsive websites and interactive applications using modern frontend technologies and frameworks.</p>
+                            <a href="#web-dev" class="card-link" data-page="web-dev">
+                                <span>View projects</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Technical Skills</h2>
+                    <p>Developed through coursework, work, and personal learning</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-card skill-coral">
+                        <div class="skill-icon">🎨</div>
+                        <h3>Design Tools</h3>
+                        <p>Adobe Suite, Figma, Canva, Procreate</p>
+                    </div>
+                    <div class="skill-card skill-mint">
+                        <div class="skill-icon">💻</div>
+                        <h3>Web Development</h3>
+                        <p>React, Vue, JavaScript, HTML/CSS, Tailwind, Git, Wordpress, PHP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-section">
+            <div class="cta-bg">
+                <div class="cta-blob"></div>
+            </div>
+            <div class="container">
+                <div class="cta-content">
+                    <div class="cta-badge">
+                        <span>Ready to learn & grow</span>
+                    </div>
+                    <h2>Let's Connect!</h2>
+                    <p>Eager to contribute to real-world projects in data visualization, web development, and motion graphics. Available for entry-level opportunities starting January 2026.</p>
+                    <div class="cta-buttons">
+                        <a href="#about" class="btn btn-white" data-page="about">
+                            Get in Touch
+                            <span class="arrow">→</span>
+                        </a>
+                        <a href="#" class="btn btn-outline-white">
+                            <span>📥</span>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+        <div class="container page-container">
+            <div class="page-header">
+                <h1>About Me</h1>
+                <h3>Hildy Wong</h3>
+                <div class="header-line"></div>
+            </div>
+
+            <!-- Profile -->
+            <div class="about-profile">
+                <div class="profile-image">
+                    <div class="profile-placeholder">
+                        <span><img src="images/logo.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="profile-content">
+                    <h2>Hello, I'm an Interactive Media Design Student</h2>
+                    <div class="profile-text">
+                        <p>
+                            I am an Interactive Media Design student at Algonquin College (May 2024 - December 2025) with a passion for data visualization, motion graphics, and web development. 
+                        </p>
+                        <p>
+                            I have experience at Swiss Chalet, where I have worked in multiple positions including host, server, and supervisor within just one year. This rapid progression demonstrates my ability to adapt, take initiative, and step up to new responsibilities. In these roles, I honed leadership, communication, teamwork, and organizational skills, while efficiently managing tasks and supporting team members.
+                        </p>
+                        <p>
+                            My goal is to offer data visualization, motion graphic, or web design services while continuing to learn and grow professionally. 
+                            I thrive in collaborative environments and enjoy turning complex information into engaging visual stories.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education & Experience -->
+            <div class="about-grid">
+                <div class="about-section">
+                    <div class="section-title">
+                        <div class="title-icon icon-blue">🎓</div>
+                        <h2>Education</h2>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024 - 2026</div>
+                            <h3>Interactive Media Design</h3>
+                            <p class="timeline-subtitle">Algonquin College</p>
+                            <p class="timeline-detail">Focus: Data Visualization & Motion Graphics</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2016 - 2018</div>
+                            <h3>Broadcast Journalism</h3>
+                            <p class="timeline-subtitle">Hong Kong Baptist University</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2014 - 2016</div>
+                            <h3>Communication & Media Studies</h3>
+                            <p class="timeline-subtitle">Hong Kong Baptist University College of International Education</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <div class="section-title">
+                        <div class="title-icon icon-yellow">💼</div>
+                        <h2>Experience</h2>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">May 2025 – Present</div>
+                            <h3>Event Staff</h3>
+                            <p class="timeline-subtitle">Queensview Café, Ottawa, Ontario</p>
+                            <p class="timeline-text">
+                                Assisted in the setup and breakdown of events to ensure a seamless experience for guests. 
+                                Hosted and served food and drinks while maintaining a welcoming atmosphere. 
+                                Collaborated with team members to ensure all aspects of events ran smoothly.
+                            </p>
+                            </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">July 2024 – Present</div>
+                            <h3>Restaurant Supervisor / Host / Server</h3>
+                            <p class="timeline-subtitle">Swiss Chalet, Ottawa, Ontario</p>
+                            <p class="timeline-text">
+                                Progressed rapidly through multiple roles within one year, demonstrating adaptability, initiative, and leadership. 
+                                Responsibilities include supervising daily operations, training and mentoring staff, coordinating front-of-house activities, and ensuring smooth service during busy periods. 
+                                Greet and seat guests, manage reservations and waitlists, provide attentive table service, handle cash and daily operation procedures, and collaborate with kitchen and service teams to deliver high-quality guest experiences.
+                            </p>
+                            <p class="timeline-text">
+                                This role strengthened my leadership, communication, and organizational skills while balancing hands-on service duties with supervisory responsibilities.
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">Sep 2018 – Apr 2024</div>
+                            <h3>Multimedia Producer</h3>
+                            <p class="timeline-subtitle">Asset Publishing and Research Ltd, Hong Kong SAR</p>
+                            <p class="timeline-text">
+                                Produced video graphics, infographics, and articles for the editorial team and CMS platform. Provided technical support for 18 webinars and 5 Virtual Awards Dinners yearly since 2021, managing pre-event preparation, live event operations, and post-production editing. 
+                                Maintained multimedia archives for easy access, managed social media channels (Twitter, LinkedIn, YouTube) to enhance brand presence, and conceptually planned, recorded, and edited podcasts. Coordinated with AV teams to ensure smooth live event execution.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="tech-skills">
+                <div class="section-title">
+                    <div class="title-icon icon-blue">📚</div>
+                    <h2>Technical Skills</h2>
+                </div>
+                <div class="skills-columns">
+                    <div class="skill-column">
+                        <h3>Professional Skills</h3>
+                        <ul>
+                            <li>Leadership & Team Management</li>
+                            <li>Project Coordination & Event Management</li>
+                            <li>Customer Service & Client Relations</li>
+                            <li>Content Creation & Multimedia Production</li>
+                            <li>Time Management & Organization</li>
+                        </ul>
+                    </div>
+                    <div class="skill-column">
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>HTML / CSS</li>
+                            <li>React / Vue.js</li>
+                            <li>Tailwind CSS</li>
+                            <li>Node.js (basic)</li>
+                            <li>Responsive Design</li>
+                            <li>Wordpress</li>
+                            <li>PHP (basic)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-column">
+                        <h3>Design & Visualization</h3>
+                        <ul>
+                            <li>Adobe Suite</li>
+                            <li>Figma</li>
+                            <li>Canca</li>
+                            <li>Procreate</li>
+                        </ul>
+                    </div>
+                    <div class="skill-column">
+                        <h3>Tools & Technologies</h3>
+                        <ul>
+                            <li>Git / GitHub</li>
+                            <li>VS Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Viz Page -->
+    <section id="data-viz" class="page">
+        <div class="container page-container">
+            <div class="page-header">
+                <h1>Data Visualization Projects</h1>
+                <div class="header-line"></div>
+                <p class="page-subtitle">
+                    A collection of academic and personal projects showcasing my journey in learning data visualization.
+                </p>
+            </div>
+
+            <div class="projects-list">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <div class="video-wrapper">
+                            <div class="video-thumbnail" data-video-id="_nswJywdObk">
+                                <img src="https://img.youtube.com/vi/_nswJywdObk/maxresdefault.jpg" alt="ESG Investment Video">
+                                <div class="play-button"></div>
+                            </div>
+                            <iframe class="video-iframe" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-badge badge-blue">Infographics for Reports</div>
+                        <h2>Which area of ESG would you favour when investing after Covid 19?</h2>
+                        <p>Comprehensive infographic project analyzing ESG investment preferences in the post-pandemic landscape, featuring data-driven visualizations and compelling storytelling.</p>
+                        <div class="project-highlights">
+                            <h4>Project Highlights</h4>
+                            <ul>
+                                <li>Analyzed survey data from 500+ respondents</li>
+                                <li>Created interactive infographics and charts</li>
+                                <li>Production for live streaming</li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Adobe After Effects</span>
+                            <span class="tag">Data Visualisation</span>
+                            <span class="tag">Infographic Design</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item project-reverse">
+                    <div class="project-image">
+                        <div class="video-wrapper">
+                            <div class="video-thumbnail" data-video-id="5mLbzx60HEI">
+                                <img src="https://img.youtube.com/vi/5mLbzx60HEI/maxresdefault.jpg" alt="Student Budget Tracker">
+                                <div class="play-button"></div>
+                            </div>
+                            <iframe class="video-iframe" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-badge badge-mint">Interactive Dashboard</div>
+                        <h2>Student Budget Tracker</h2>
+                        <p>Personal finance visualization project helping students track spending habits with interactive charts showing expense categories and monthly trends.</p>
+                        <div class="project-highlights">
+                            <h4>Project Highlights</h4>
+                            <ul>
+                                <li>Self-initiated personal project</li>
+                                <li>Used by 50+ classmates</li>
+                                <li>Featured in school tech showcase</li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Visual Storytelling</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <div class="video-wrapper">
+                            <div class="video-thumbnail" data-video-id="jNQXAC9IVRw">
+                                <img src="" alt="Climate Change Analysis">
+                                <div class="play-button"></div>
+                            </div>
+                            <iframe class="video-iframe" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-badge badge-yellow">Data Analysis</div>
+                        <h2>Climate Change Analysis</h2>
+                        <p>Data visualization project analyzing temperature trends and CO2 levels, creating compelling visuals to communicate scientific data.</p>
+                        <div class="project-highlights">
+                            <h4>Project Highlights</h4>
+                            <ul>
+                                <li>Analyzed 50 years of climate data</li>
+                                <li>Interdisciplinary collaboration project</li>
+                                <li>Presented at student research symposium</li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">R</span>
+                            <span class="tag">ggplot2</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Jupyter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Dev Page -->
+    <section id="web-dev" class="page">
+        <div class="container page-container">
+            <div class="page-header">
+                <h1>Web Development Projects</h1>
+                <div class="header-line"></div>
+                <p class="page-subtitle">
+                    A showcase of web applications built during my studies and personal time.
+                </p>
+            </div>
+
+            <!-- Project Showcase -->
+            <div class="projects-list">
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1546900703-cf06143d1239?w=800" alt="Campus Events">
+                    </div>
+                    <div class="project-details">
+                        <div class="project-badge badge-blue">Project 1</div>
+                        <h2>Campus Event Platform</h2>
+                        <p>Full-stack web application for discovering and managing campus events. Final project featuring user authentication and RSVP functionality.</p>
+                        <div class="project-highlights">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>User authentication & profiles</li>
+                                <li>Real-time event updates</li>
+                                <li>Course final project - Grade: A</li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Express</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item project-reverse">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1546900703-cf06143d1239?w=800" alt="Recipe App">
+                    </div>
+                    <div class="project-details">
+                        <div class="project-badge badge-mint">Project 2</div>
+                        <h2>Recipe Sharing App</h2>
+                        <p>Personal project allowing users to share and discover recipes. Built to practice React hooks and API integration.</p>
+                        <div class="project-highlights">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Search & filter functionality</li>
+                                <li>Save favorite recipes</li>
+                                <li>Self-initiated learning project</li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-image">
+                        <p>
+                        <a href="https://wong0382.github.io/portfolio-website/hildy.w/" target="_blank">
+                        <img src="images/portfolio-website.png" alt="Portfolio website cover">
+                        </a>
+
+                        </p>
+                        
+                    </div>
+                    <div class="project-details">
+                        <div class="project-badge badge-yellow">Project 3</div>
+                        <h2>Task Management Tool</h2>
+                        <p>Simple to-do list application with drag-and-drop functionality. Created to learn state management patterns.</p>
+                        <div class="project-highlights">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Drag & drop interface</li>
+                                <li>Category organization</li>
+                                <li>Daily productivity tool</li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">LocalStorage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-circle">P</div>
+                        <span>Portfolio</span>
+                    </div>
+                    <p>Creating innovative solutions through data visualization and web development.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" data-page="home">Home</a></li>
+                        <li><a href="#about" data-page="about">About</a></li>
+                        <li><a href="#data-viz" data-page="data-viz">Data Visualization</a></li>
+                        <li><a href="#web-dev" data-page="web-dev">Web Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Get In Touch</h3>
+                    <ul>
+                        <li>hildy.hy@gmail.com</li>
+                        <li>+1 (753) 881-0612</li>
+                        <li>Available for fulltime work from January 2026</li>
+                        <li><a href="Hildy_Resume.pdf" target="_blank">Download Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hildy.W Portfolio. All rights reserved. Built with HTML, CSS & JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
