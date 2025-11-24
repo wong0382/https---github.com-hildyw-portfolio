@@ -778,6 +778,18 @@ p {
   font-size: .75rem;
 }
 
+.stat-number {
+    display: flex;
+    justify-content: center;
+    align-items: baseline; /* keeps + aligned nicely with the number */
+    gap: 1px; /* small spacing */
+}
+
+.stat-number .plus {
+    margin: 0;
+    padding: 0;
+}
+
 .floating-icon {
   font-size: 3rem;
   animation: 3s ease-in-out infinite floatIcon;

@@ -200,7 +200,7 @@ function renderProjects() {
     
     if (projectCount) {
         setTimeout(() => {
-            animateCounter(projectCount, '10+');
+            animateCounter(projectCount, 10);
             animateCounter(courseCount, 15);
             animateCounter(gpaCount, 3.92);
         }, 500);
